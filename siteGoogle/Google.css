@@ -1,0 +1,58 @@
+header{
+    margin-top: 200px;
+}
+
+h1{
+    text-align: center;
+   
+}
+
+h1 span{
+    font-size: 100px;
+    
+    
+}
+
+
+.g1{
+    color: blue;
+}
+.Go{
+    color: red;
+}
+.go{
+    color: yellow;
+}
+.Gl{
+    color: green;
+}
+.pesquisa{
+    width: 60%;
+    border-radius: 20px;
+}
+.lupa{
+    width: 20px;
+    height: 20px;
+}
+.micro{
+    width: 40px;
+    height: 20px;
+}
+#numero{
+    background-color: white;
+    
+}
+ul{
+    list-style: none;
+}
+li img{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+}
+ul img:hover{
+    background-color:gray ;
+}
+
+
