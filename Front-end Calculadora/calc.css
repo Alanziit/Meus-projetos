@@ -1,0 +1,31 @@
+.principal{
+    border:3px solid black;
+    width:300px;
+    background-color: rgb(167, 166, 166);
+}
+li{
+    list-style: none;
+    display:inline-flex;
+}
+input{
+    height: 50px;
+    width:50px;
+}
+.zero{
+    padding: 10px;
+   width: 200px;
+   height:50px ;
+ border:2px solid black;
+ margin-left: 30px;
+ line-height:50px;
+ text-align: end;
+ font-size: 40px;
+ background-color: rgb(114, 114, 247);
+}
+.mais{
+  height:120px;
+  margin-top: -135px;  
+  margin-left: 202px;
+  position: absolute;
+  background-color: rgb(87, 86, 86);
+}
