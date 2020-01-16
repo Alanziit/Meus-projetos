@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Que horas são ?</title>
+</head>
+
+<style>
+    img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 15px;
+    }
+
+    div {
+      
+        border-radius: 20px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    body {
+        background-color: rgb(0, 38, 255);
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+    }
+
+    #hora {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #resposta {
+        text-align: center;
+        color: white;
+        font-size: 50px;
+    }
+    .blocos{
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+    }
+</style>
+
+<body onload="soltaHora()">
+    
+
+    <div>
+        <img src="madrugada.jpeg" alt="foto" id="img">
+        <p id="resposta"></p>
+        </div>
+    </div>
+
+
+    <script>
+
+        let data = new Date()
+        let tempo = data.getHours()
+        let minuto = data.getMinutes()
+
+
+        
+        let imagem = document.getElementById('img')
+        function soltaHora() {
+            if (tempo > 6 && tempo <= 12) {
+                document.getElementById('resposta').innerHTML = `Bom dia !! Agora são ${tempo} horas e ${minuto} minutos`
+                document.body.style.background = 'yellow'
+                imagem.src='manha.jpeg'
+            } else if (tempo > 13 && tempo <= 18) {
+                document.getElementById('resposta').innerHTML = `Boa tarde!! Agora são ${tempo} horas e ${minuto} minutos`
+                document.body.style.background = 'orange'
+                imagem.src='tarde.jpeg'
+            } else if (tempo > 19 && tempo < 24) {
+                document.getElementById('resposta').innerHTML = `Boa noite !! Agora são ${tempo} horas e ${minuto} minutos`
+                document.body.style.background = 'black'
+                imagem.src='noite.jpeg'
+            }else if(tempo >1 && tempo < 5){
+                document.getElementById('resposta').innerHTML = 'Ainda e madrugada'
+                document.body.style.background = 'gray' 
+                imagem.src='madrugada.jpeg'  
+
+            }
+        }
+
+    </script>
+</body>
+
+
+</html>
