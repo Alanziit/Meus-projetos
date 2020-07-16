@@ -1,0 +1,40 @@
+h4{
+    color: rgb(180, 228, 197);
+}
+#pontos{
+    margin-left: 15%;
+    margin-top: 30px;
+}
+.semCard{
+    border: 0;
+}
+body{
+    background-color: #d6d6d6 !important;
+    
+}
+body::after {
+    content: "";
+    background:white ;
+   position: fixed ;
+   top:220px;
+   right:0  ;
+   left: 0 ;
+   bottom: 0 ;
+   z-index: -1 ; 
+}
+.tamCard{
+    height: 410px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:700px){
+    .todoCard{
+       margin-left: 10%;
+       margin-top: 20px;
+
+        
+    }header  a{
+        font-size: 40px;   
+    }
+}

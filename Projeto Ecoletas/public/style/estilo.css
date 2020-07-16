@@ -1,0 +1,78 @@
+span{
+    margin-right: 10px;
+}
+body{
+    background-color: #d6d6d6 !important;
+   background-image: url('/icones/home-background.svg');
+   background-repeat: no-repeat;
+   background-position: right ;
+   background-position-y: 100px;
+   background-size: 820px;
+}
+.principal{
+color: red;
+}
+.btn{
+    margin-top:50px;
+    height: 70px;
+    border-radius: 10px;
+}
+h3{
+    margin-top: 20px;
+}
+#modal{
+    background-color: rgba(0, 0, 0, 0.918);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 100ms;
+}
+#modal.hide{
+    display: none;
+}
+#modal header{
+    display: flex;
+}
+#modal h2{
+    color:white;
+}
+.modalInput{
+margin-top: 200px;
+margin-left: -20%;
+}
+.modalInput p{
+    color: white;
+}
+.modalInput input{
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    border: 0;
+}
+.modalInput button{
+    padding: 10px;
+    border-radius: 0 8px 8px 0;
+    margin-left: -5px;
+    background-color: rgb(77, 235, 77);
+    border: 0;;
+    
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 700px){
+    body{
+background-position-x: 420px;
+    }.btn{
+margin-left: 25%;
+    }header  a{
+font-size: 30px;   
+}.modalInput{
+    margin-left: -50%;
+}.textoIndex{
+    text-align: center;
+}
+}

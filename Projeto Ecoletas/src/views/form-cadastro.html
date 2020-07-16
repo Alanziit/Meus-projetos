@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/estilo-form.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header class="Header">
+         <img src="/icones/logo.svg" alt="logo" >
+         <p > <span><img src="/icones/arrow-left.svg" alt=""></span> <a href="/" > Volte para home </a></p>
+   </header>
+
+   <div class="container">
+   <form>
+       <fieldset>
+           <legend>Dados do Cliente</legend>
+  
+    <div class="form-group">
+      <label for="inputAddress">Nome completo</label>
+      <input type="text" class="form-control" id="inputName" placeholder="Augusto liberato" required>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-9">
+          <label for="inputCity">Endereço</label>
+          <input type="text" class="form-control" id="inputRua" placeholder="Rua jabaquara" required>
+        </div>
+        <div class="form-group col-md-3">
+           
+                <label for="inputNumber">Número</label>
+                <input type="text" class="form-control" >
+             
+          </select>
+        </div>
+    
+      </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label >Estado</label>
+            <select id="inputState" class="form-control" required>
+              <option  value='' >selecione o estado</option>
+              
+            </select>
+
+          </div>
+      <div class="form-group col-md-6">
+        <label >Cidade</label>
+
+          <select  id="inputCity" class="form-control" disabled >
+          <option value=''>Selecione a cidade</option>
+          
+        </select>
+        <input type="hidden" id="state">
+      </div>
+  
+    </div>
+    <div class="form-group">
+   
+    </div>
+</fieldset>
+    <main>
+      <div class="row d-flex justify-content-around mt-5">
+      <h2 class="col-md-3">itens de coleta</h2>
+      <p class="col-md-3">Selecione um ou mais itens abaixo</p>
+     </div>
+
+      <div class="imagensLixo">
+     
+        <li id="img-1" class="selected" >
+           <img   src="/icones/lampadas.svg" alt="">
+           <span>Lampada</span>
+        </li> 
+
+        <li id="img-2">
+          
+          <img   src="/icones/baterias.svg" alt="">
+          <span>bateria</span>
+
+        </li>
+        <li id="img-3">
+          
+          <img   src="/icones/papeis-papelao.svg" alt="">
+          <span>Papéis e Papelão</span>
+
+        </li>
+    
+        <li id="img-4">
+           <img   src="/icones/eletronicos.svg" alt="">
+           <span>Resíduos eletronicos</span>
+        </li> 
+
+        <li id="img-5">
+          
+          <img   src="/icones/organicos.svg" alt="">
+          <span>Resíduos Orgânicos</span>
+
+        </li>
+        <li id="img-6">
+          
+          <img   src="/icones/oleo.svg" alt="">
+          <span>Òleo de cozinha</span>
+
+        </li>
+      </div>
+
+
+      <div class="d-flex justify-content-end mt-5">
+<input type="hidden" id="itens">
+
+        <button type="submit" class="btn btn-success">Cadastrar ponto de coleta</button>
+    </div>
+
+     
+      </main>
+     </div>
+  
+  </form>
+  
+</div>
+</body>
+<script src="/Estados/states_form.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</html>

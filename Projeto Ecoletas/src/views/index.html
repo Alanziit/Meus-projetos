@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <title>Home</title>
+</head>
+
+<body>
+  
+    <header class=" container row d-flex justify-content-around mt-5 col-12">
+         <!-- <div class=""> -->
+            <img src="/icones/logo.svg" alt="logo" >
+            
+            <p > <span><img src="/icones/log-in.svg" alt=""></span> <a href="/form-cadastro" > cadastre um ponto de coleta </a></p>
+        <!-- </div> -->
+    </header>
+
+    <div class="container " >
+    <main>
+        <div class="d-flex flex-column bd-highlight mt-5 textoIndex" >
+        <!-- <h1>Seu marketplace</br> de coletas de resíduos</h1> -->
+        <h1>{{title}}</h1>
+        <h3>Ajudamos pessoas a encontrarem pontos</br> de coleta de forma eficiente</h3>
+        
+    </div>
+   
+    <div >
+      
+ <button  class="btn btn-success " id='abre' > <img src="/icones/search.svg" alt="" >  Pesquisar ponto de coleta</button>
+</div>
+    </main>
+</div>
+<div id="modal" class="hide" >
+        <header>
+      <h2>pontos de coleta</h2>
+       <img id="fecha" src="/icones/x.svg" alt="">
+    </header>
+    <div class="modalInput">
+        <p>cidade</p>
+      <input type="text">
+     <a href="/search-results"> <button ><img src="/icones/search.svg" alt=""></button></a>
+    </div>
+  </div>
+
+</body>
+<script src="/Estados/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</html>
